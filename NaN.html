@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	/* Note :  when your try to perform a mathmatical operation with a non numeric
+			value then the Number.isNan() method will return true. */
+
+	var st = "hello world";
+	var st1 = "50";
+	var num = 2;
+	var bl = true;
+	var exp1 = st / 2;
+	var exp2 = num / 2;
+	var exp3 = bl / 2;
+	console.log(Number.isNaN(st)); 		/* false */
+	console.log(Number.isNaN(num)); 	/* false */
+	console.log(Number.isNaN(bl));		/* false */
+	console.log(Number.isNaN(exp1));	/*true*/
+	console.log(Number.isNaN(exp2));	/* false */
+	console.log(Number.isNaN(exp3));	/* false */
+
+
+	// Global isNaN()
+	// Note : Global isNaN() method will return true if you pass a string value in it
+	console.log('Global isNaN()');
+	console.log(isNaN(st));
+	console.log(isNaN(st1));
+	console.log(isNaN(num));
+	console.log(isNaN(bl));
+</script>
+</body>
+</html>

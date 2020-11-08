@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	var t = 'kyle';
+
+	(function printName(){
+		var t = 'jenny';
+		console.log(t);
+	})();
+	console.log(t);
+
+
+	// -----------------------------
+	// Object Bound with this keyword
+	// ---------------------------------
+	function ask(a,que){
+		console.log(this.teacher);
+		console.log(a.name);
+		console.log(que);
+	}
+	function otherClass(){
+		var myContext = {
+			teacher:'kyle'
+		}
+		var abc = {
+			name:'aman'
+		}
+		ask.call(myContext,abc,'why');
+	}
+	otherClass();
+</script>
+</body>
+</html>
+
+

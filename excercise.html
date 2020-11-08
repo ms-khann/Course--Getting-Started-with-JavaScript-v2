@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	var favriteBooks = [];
+
+	addFavriteBook('C lang');
+	addFavriteBook('A  Song of ice and fire');
+	addFavriteBook('Crime & Punishment');
+	showFavriteBooks();
+
+	function addFavriteBook( book_name ){
+		favriteBooks.push(book_name);
+	}
+	function showFavriteBooks(){
+		for ( let book of favriteBooks ){
+			console.log(book);
+		}
+	}
+</script>
+</body>
+</html>
